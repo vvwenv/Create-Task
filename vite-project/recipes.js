@@ -18,7 +18,24 @@ const meals = [
   {
     name: "Spaghetti",
     type: "lunch",
-    ingredients: "Ground beef, salt, pepper, oil, seasoning",
-    instructions: "Boil water added with salt. Put half of the spaghetti in.",
+    ingredients:
+      "Ground beef, crushed tomato, diced garlic, diced onion, salt, pepper, oil, seasoning",
+    instructions:
+      "Boil water added with salt. Put half of the spaghetti in until soft. Drain it and set aside. Cook onions in pan with oil for 3 minutes. Then, cook the ground beef (stir and press into pieces while you're at it) with oil until well done and mix with your onions and crushed tomatoes, cooking and stirring on medium heat. Add around half of a water bottle once it starts boiling. When it boils again, add half a cup of oil. seasoning, diced garlic, and two pinches of salt. Stir, add your pasta, and stir again.",
+  },
+  {
+    name: "Sandwich",
+    type: "lunch",
+    ingredients: "2 slices bread, 1 egg, 2 slices ham, 1 slice cheese, oil",
+    instructions:
+      "Cook the egg, then the ham slices in a pan with oil. Stack the egg, ham, and cheese on a slice of bread, and top it with another. Grill the sandwich on both sides until golden brown.",
+  },
+  {
+    name: "Sushi",
+    type: "dinner",
+    ingredients:
+      "cooked rice, sushi vinegar, seaweed, eel, mango, cucumber, avocado, bamboo roll, plastic wrapper",
+    instructions:
+      "Mix cooked rice with 1/2 cup of sushi vinegar. Press rice according to your seaweed size ",
   },
 ];
