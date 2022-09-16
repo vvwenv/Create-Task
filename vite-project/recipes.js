@@ -36,6 +36,15 @@ const meals = [
     ingredients:
       "cooked rice, sushi vinegar, seaweed, eel, mango, cucumber, avocado, bamboo roll, plastic wrapper",
     instructions:
-      "Mix cooked rice with 1/2 cup of sushi vinegar. Press rice according to your seaweed size ",
+      "Mix cooked rice with 1/2 cup of sushi vinegar. Press rice into thin rectangular shape with your hands according to the size of the seaweed on a plastic wrapper. Put seaweed on top and a little rice with whatever fillings (cut into strips) you like/have. Put the sushi with the plastic wrap onto the bamboo roll. Roll it tightly.",
+  },
+  {
+    name: "Fried Rice",
+    type: "dinner",
+    ingredients: "cooked rice, ham, 2 egg, soy sauce, sesame oil, oil",
+    instructions:
+      "Cut ham into small pieces. Cook it and put aside. Make scrambled eggs. Throw your rice and ham in. Stir and throw soy sauce and sesame oil in for taste.",
   },
 ];
+
+export { meals };
