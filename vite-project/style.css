@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Sen&display=swap');
 
 html,
 body,
@@ -22,6 +22,36 @@ body {
   font-size: 3rem;
   border-radius: 1.5rem;
   margin-top: 2rem;
+  margin-bottom: 5rem;
   padding: 1rem 2rem 1rem 2rem;
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Sen', sans-serif;
+}
+.title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.mealContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.meal {
+  background-color: #c08aa2;
+  width: 35rem;
+  height:50rem;
+  border-radius: 35px;
+}
+.name {
+  padding-top: 4rem;
+  font-size: 3rem;
+  color: #2f3849;
+}
+img {
+  margin-top: 2rem;
+  width: 25rem;
+  height: 20rem;
+  border-radius: 20px;
+}
+p {
+  font-size: 2rem;
 }
