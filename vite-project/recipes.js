@@ -1,4 +1,4 @@
-const meals = [
+const breakfast = [
   {
     name: "Pancake",
     type: "breakfast",
@@ -15,6 +15,8 @@ const meals = [
     instructions:
       "Whisk egg and milk, then add vanilla, sugar, and cinnamon in a medium-sized bowl. Coat your bread on both sides. Melt butter in the pan and cook slices until golden brown on both sides.",
   },
+];
+const lunch = [
   {
     name: "Spaghetti",
     type: "lunch",
@@ -30,6 +32,8 @@ const meals = [
     instructions:
       "Cook the egg, then the ham slices in a pan with oil. Stack the egg, ham, and cheese on a slice of bread, and top it with another. Grill the sandwich on both sides until golden brown.",
   },
+];
+const dinner = [
   {
     name: "Sushi",
     type: "dinner",
@@ -47,4 +51,4 @@ const meals = [
   },
 ];
 
-export { meals };
+export { breakfast, lunch, dinner };
