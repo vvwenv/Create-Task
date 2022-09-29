@@ -1,21 +1,31 @@
 import "./style.css";
-import { breakfast, lunch, dinner } from "./recipes";
-
-var rdnB = breakfast[Math.floor(Math.random() * breakfast.length)];
-var rdnL = lunch[Math.floor(Math.random() * lunch.length)];
-var rdnD = dinner[Math.floor(Math.random() * dinner.length)];
-// console.log(rdn.name);
+import { meals } from "./recipes";
+// const rdn = meals[Math.floor(Math.random() * meals.length)];
+// console.log(rdn(meals.name));
+function main() {
+  let elements = document.getElementsByClassName("genBtn");
+  Array.from(elements).forEach(function (element) {
+    element.addEventListener("click", function () {
+      const rdn = Math.floor(Math.random() * meals.length);
+      document.querySelector(".meal").innerHTML = "";
+      console.log(meals[rdn]);
+      display();
+    });
+  });
+}
+main();
+function display() {
+  document.querySelector(".meal").insertAdjacentHTML(
+    "afterbegin"`
+      <h2 class="name">${meals.name}</h2>`
+    //   <img>
+    //   <p>${}</p>
+    //   <p>${}</p>
+  );
+}
 // console.log(rdn.type);
 // console.log(rdn.ingredients);
 // console.log(rdn.instructions);
-
-document.getElementById("mainBtn").addEventListener("click", test);
-
-function test() {
-  console.log(rdnB);
-  console.log(rdnL);
-  console.log(rdnD);
-}
 
 // let name = document.querySelector(".name");
 // let img = document.querySelector("img");

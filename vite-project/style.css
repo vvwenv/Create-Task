@@ -29,7 +29,7 @@ body {
   font-family: 'Fredoka One', cursive;
   color: #2f3849;
 }
-#mainBtn {
+.genBtn {
   font-size: 3rem;
   border-radius: 1.5rem;
   margin-top: 2rem;
@@ -43,8 +43,8 @@ body {
 }
 .mealContainer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  /* flex-direction: row; */
+  justify-content: center;
 }
 .meal {
   background-color: #c08aa2;
