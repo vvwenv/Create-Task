@@ -8,19 +8,21 @@ function main() {
     element.addEventListener("click", function () {
       const rdn = Math.floor(Math.random() * meals.length);
       document.querySelector(".meal").innerHTML = "";
-      console.log(meals[rdn]);
+      console.log(meals[rdn].name);
       display();
     });
   });
 }
 main();
 function display() {
+  const rdn = Math.floor(Math.random() * meals.length);
   document.querySelector(".meal").insertAdjacentHTML(
-    "afterbegin"`
-      <h2 class="name">${meals.name}</h2>`
-    //   <img>
-    //   <p>${}</p>
-    //   <p>${}</p>
+    "afterbegin",
+    `
+      <h2 class="name">${meals[rdn].name}</h2>
+      
+      <p class="ingredients">${meals[rdn].ingredients}</p>
+      <p class="instructions">${meals[rdn].instructions}</p>`
   );
 }
 // console.log(rdn.type);

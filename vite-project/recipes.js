@@ -1,6 +1,7 @@
 const meals = [
   {
     name: "Pancake",
+    url: "",
     type: "Breakfast",
     ingredients:
       "1 1/2 cups flour, 2 tp baking powder, 2tbsp sugar, 1/4 tp salt, 1 1/2 milk, 1 egg, 2 tbsp oil",
@@ -9,6 +10,7 @@ const meals = [
   },
   {
     name: "French Toast",
+    url: "",
     type: "Breakfast",
     ingredients:
       "2 slices bread, 1 egg, 1/2 cup milk, 1/4 tp vanilla extract, 1/4 tp sugar, pinch ground cinnamon, 1 tbsp salted butter",
@@ -17,6 +19,7 @@ const meals = [
   },
   {
     name: "Spaghetti",
+    url: "",
     type: "Lunch",
     ingredients:
       "Ground beef, crushed tomato, diced garlic, diced onion, salt, pepper, oil, seasoning",
@@ -25,6 +28,7 @@ const meals = [
   },
   {
     name: "Sandwich",
+    url: "",
     type: "Lunch",
     ingredients: "2 slices bread, 1 egg, 2 slices ham, 1 slice cheese, oil",
     instructions:
@@ -32,6 +36,7 @@ const meals = [
   },
   {
     name: "Sushi",
+    url: "",
     type: "Dinner",
     ingredients:
       "cooked rice, sushi vinegar, seaweed, eel, mango, cucumber, avocado, bamboo roll, plastic wrapper",
@@ -40,6 +45,7 @@ const meals = [
   },
   {
     name: "Fried Rice",
+    url: "",
     type: "Dinner",
     ingredients: "cooked rice, ham, 2 egg, soy sauce, sesame oil, oil",
     instructions:
