@@ -1,5 +1,6 @@
 import "./style.css";
 import { meals } from "./recipes";
+const fav = [];
 // const rdn = meals[Math.floor(Math.random() * meals.length)];
 // console.log(rdn(meals.name));
 function main() {
@@ -20,11 +21,28 @@ function display() {
     "afterbegin",
     `
       <h2 class="name">${meals[rdn].name}</h2>
-      
+      <img class="img" src="${meals[rdn].url}" alt=""/>
+      <div class="text">
+      <h2 class="need">You need</h2>
       <p class="ingredients">${meals[rdn].ingredients}</p>
-      <p class="instructions">${meals[rdn].instructions}</p>`
+      <p class="instructions">${meals[rdn].instructions}</p></div>
+      <button class="addfav">Add to Favorite</button>`
   );
 }
+document.getElementsByClassName("favBtn").onclick = function () {
+  toggle();
+};
+
+function toggle() {
+  document.getElementsByClassName("fav").classList.toggle("show");
+}
+
+// $(document).ready(function () {
+//   $(".favBtn").click(function () {
+//     $(".fav").toggleClass("fav--active");
+//   });
+// });
+
 // console.log(rdn.type);
 // console.log(rdn.ingredients);
 // console.log(rdn.instructions);
