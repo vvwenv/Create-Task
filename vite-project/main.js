@@ -36,6 +36,13 @@ document.getElementsByClassName("favBtn").onclick = function () {
 function toggle() {
   document.getElementsByClassName("fav").classList.toggle("show");
 }
+document.getElementsByClassName("addfav").onclick = function () {
+  add();
+};
+function add() {
+  fav.push(meals[rdn].name);
+  console.log(fav);
+}
 
 // $(document).ready(function () {
 //   $(".favBtn").click(function () {
