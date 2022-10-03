@@ -1,15 +1,15 @@
 import "./style.css";
 import { meals } from "./recipes";
 const fav = [];
+const rdn = Math.floor(Math.random() * meals.length);
 // const rdn = meals[Math.floor(Math.random() * meals.length)];
 // console.log(rdn(meals.name));
 function main() {
   let elements = document.getElementsByClassName("genBtn");
   Array.from(elements).forEach(function (element) {
     element.addEventListener("click", function () {
-      const rdn = Math.floor(Math.random() * meals.length);
       document.querySelector(".meal").innerHTML = "";
-      console.log(meals[rdn].name);
+      // console.log(meals[rdn].name);
       display();
     });
   });
@@ -28,13 +28,12 @@ function display() {
       <p class="instructions">${meals[rdn].instructions}</p></div>
       <button class="addfav">Add to Favorite</button>`
   );
+  document.getElementsByClassName("favBtn")[0].onclick = function () {
+    toggle();
+  };
 }
-document.getElementsByClassName("favBtn").onclick = function () {
-  toggle();
-};
-
 function toggle() {
-  document.getElementsByClassName("fav").classList.toggle("show");
+  document.getElementsByClassName("fav")[0].classList.toggle("show");
 }
 document.getElementsByClassName("addfav").onclick = function () {
   add();
