@@ -1,7 +1,7 @@
 const meals = [
   {
     name: "Pancake",
-    url: "./public/img/pancake.jpg",
+    url: "/img/pancake.jpg",
     type: "Breakfast",
     ingredients:
       "1 1/2 cups flour, 2 tp baking powder, 2tbsp sugar, 1/4 tp salt, 1 1/2 milk, 1 egg, and 2 tbsp oil.",
@@ -10,7 +10,7 @@ const meals = [
   },
   {
     name: "French Toast",
-    url: "./public/img/french toast.jpg",
+    url: "/img/french toast.jpg",
     type: "Breakfast",
     ingredients:
       "2 slices bread, 1 egg, 1/2 cup milk, 1/4 tp vanilla extract, 1/4 tp sugar, pinch ground cinnamon, and 1 tbsp salted butter.",
@@ -19,7 +19,7 @@ const meals = [
   },
   {
     name: "Spaghetti",
-    url: "./public/img/spaghetti.jpg",
+    url: "/img/spaghetti.jpg",
     type: "Lunch",
     ingredients:
       "1/2 spaghetti, ground beef, crushed tomato, diced garlic, diced onion, salt, pepper, oil, and seasoning.",
@@ -28,7 +28,7 @@ const meals = [
   },
   {
     name: "Sandwich",
-    url: "./public/img/sandwich.jpg",
+    url: "/img/sandwich.jpg",
     type: "Lunch",
     ingredients:
       "2 slices bread, 1 egg, 2 slices ham, 1 slice cheese, and oil.",
@@ -37,7 +37,7 @@ const meals = [
   },
   {
     name: "Sushi",
-    url: "./public/img/sushi.jpg",
+    url: "/img/sushi.jpg",
     type: "Dinner",
     ingredients:
       "cooked rice, sushi vinegar, seaweed, eel, mango, cucumber, avocado, bamboo roll, and plastic wrapper.",
@@ -46,7 +46,7 @@ const meals = [
   },
   {
     name: "Fried Rice",
-    url: "./public/img/fried rice.jpg",
+    url: "/img/fried rice.jpg",
     type: "Dinner",
     ingredients: "cooked rice, ham, 2 egg, soy sauce, sesame oil, and oil.",
     instructions:

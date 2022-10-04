@@ -41,6 +41,7 @@ header {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  z-index: 2;
 }
 .favIcon {
   fill: #ebebed;
@@ -50,15 +51,31 @@ header {
 .favIcon:hover, .favIcon:active {
   fill: #c08aa2;
 }
+.favIcon--active {
+  fill: #c08aa2;
+}
 .fav {
-  width: 100%;
-  height: 50%;
+  width: 18%;
+  height: 100%;
   position: absolute;
-  background-color: black;
+  top: 0;
+  right: 0;
+  overflow: auto;
+  background-color: #ebebed;
   display: none;
+  z-index: 1;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
 }
 .show {
   display: block;
+}
+.favHead {
+  font-size: 3.5rem;
+  margin-top: 2.5rem;
+  margin-right: 6rem;
+  font-family: 'Fredoka One', cursive;
+  color:#2f3849;
 }
 .title {
   font-size: 3rem;
