@@ -34,6 +34,7 @@ function display() {
 }
 function toggle() {
   document.getElementsByClassName("fav")[0].classList.toggle("show");
+  document.querySelector(".favIcon").classList.toggle("favIcon--active");
 }
 document.getElementsByClassName("addfav").onclick = function () {
   add();

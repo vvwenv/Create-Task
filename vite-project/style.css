@@ -38,6 +38,7 @@ header {
   position: absolute;
   right: 2rem;
   top: 2rem;
+  z-index: 2;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -50,12 +51,21 @@ header {
 .favIcon:hover, .favIcon:active {
   fill: #c08aa2;
 }
+.favIcon--active {
+  fill: #c08aa2;
+}
 .fav {
-  width: 100%;
-  height: 50%;
+  width: 20%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  overflow: auto;
   position: absolute;
-  background-color: black;
+  background-color: #ebebed;
   display: none;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
 }
 .show {
   display: block;
@@ -106,4 +116,11 @@ img {
   background-color: #c08aa2;
   border-style: solid;
   border-radius: 0.5rem;
+}
+#favHead {
+  font-size: 4rem;
+  margin-top: 2.2rem;
+  margin-right: 6rem;
+  color: #2f3849;
+  font-family: 'Fredoka One', cursive;
 }
