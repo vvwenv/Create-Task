@@ -1,6 +1,6 @@
 import "./style.css";
 import { meals } from "./recipes";
-const fav = [];
+const fav = ["Hello"];
 const rdn = Math.floor(Math.random() * meals.length);
 // const rdn = meals[Math.floor(Math.random() * meals.length)];
 // console.log(rdn(meals.name));
@@ -31,16 +31,17 @@ function display() {
   document.getElementsByClassName("favBtn")[0].onclick = function () {
     toggle();
   };
+  document.getElementsByClassName("addfav")[0].onclick = function () {
+    add();
+  };
 }
 function toggle() {
   document.getElementsByClassName("fav")[0].classList.toggle("show");
   document.querySelector(".favIcon").classList.toggle("favIcon--active");
 }
-document.getElementsByClassName("addfav").onclick = function () {
-  add();
-};
+
 function add() {
-  fav.push(meals[rdn].name);
+  fav.push(this.meals[rdn].name);
   console.log(fav);
 }
 
