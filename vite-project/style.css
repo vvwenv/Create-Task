@@ -38,6 +38,7 @@ header {
   position: absolute;
   right: 2rem;
   top: 2rem;
+  z-index: 2;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -123,4 +124,11 @@ img {
   background-color: #c08aa2;
   border-style: solid;
   border-radius: 0.5rem;
+}
+#favHead {
+  font-size: 4rem;
+  margin-top: 2.2rem;
+  margin-right: 6rem;
+  color: #2f3849;
+  font-family: 'Fredoka One', cursive;
 }
