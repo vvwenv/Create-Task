@@ -116,7 +116,7 @@ img {
 .instructions {
   margin-top: 1rem;
 }
-.addfav {
+.addfav, .removefav {
   font-size: 1.5rem;
   padding: 0.2rem;
   margin-top: 1rem;
@@ -124,6 +124,10 @@ img {
   background-color: #c08aa2;
   border-style: solid;
   border-radius: 0.5rem;
+}
+.removefav {
+  font-size: 2rem;
+  padding: 0rem 2rem 0rem 2rem;
 }
 #favHead {
   font-size: 4rem;

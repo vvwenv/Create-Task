@@ -42,7 +42,7 @@ function toggle() {
 }
 function test() {
   if (meals[rdn].fav == false) {
-    document.querySelector(".fav").insertAdjacentHTML(
+    document.querySelector(".favContent").insertAdjacentHTML(
       "afterbegin",
       `
       <h2 class="name">${meals[rdn].name}</h2>
@@ -50,9 +50,12 @@ function test() {
       <div class="text">
       <h2 class="need">You need</h2>
       <p class="ingredients">${meals[rdn].ingredients}</p>
-      <p class="instructions">${meals[rdn].instructions}</p></div>`
+      <p class="instructions">${meals[rdn].instructions}</p></div>
+      <button class="removefav">-</button>`
     );
     console.log("In favorites now");
+    meals[rdn].fav = true;
+    console.log(meals[rdn].fav);
   } else {
     console.log(meals[rdn].fav);
     console.log("Already in your favorites");
