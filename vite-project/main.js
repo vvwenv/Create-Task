@@ -14,6 +14,7 @@ function main() {
     });
   });
 }
+toggle();
 main();
 function display() {
   const rdn = Math.floor(Math.random() * meals.length);
@@ -28,9 +29,6 @@ function display() {
       <p class="instructions">${meals[rdn].instructions}</p></div>
       <button class="addfav">Add to Favorite</button>`
   );
-  document.getElementsByClassName("favBtn")[0].onclick = function () {
-    toggle();
-  };
 }
 function addtoFav() {
   const rdn = Math.floor(Math.random() * meals.length);
@@ -61,8 +59,10 @@ function addtoFav() {
   });
 }
 function toggle() {
-  document.getElementsByClassName("fav")[0].classList.toggle("show");
-  document.querySelector(".favIcon").classList.toggle("favIcon--active");
+  document.getElementsByClassName("favBtn")[0].onclick = function () {
+    document.getElementsByClassName("fav")[0].classList.toggle("show");
+    document.querySelector(".favIcon").classList.toggle("favIcon--active");
+  };
 }
 // function add() {
 //   fav.push(this.meals[rdn].name);
